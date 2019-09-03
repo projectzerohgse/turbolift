@@ -112,6 +112,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -122,7 +123,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1567528094572</updated>
-      <workItem from="1567528096722" duration="23000" />
+      <workItem from="1567528096722" duration="1285000" />
+      <workItem from="1567530023511" duration="608000" />
+      <workItem from="1567532662093" duration="165000" />
     </task>
     <servers />
   </component>
@@ -134,7 +137,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
