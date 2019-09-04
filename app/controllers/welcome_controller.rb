@@ -1,8 +1,8 @@
 class WelcomeController < ApplicationController
 
   def index
-    
-    $oauth_key = "test"
+
+    $oauth_key = "d502eec9-2755-4c19-86b5-cebf38a5614a"
     $oauth_secret = "secret"
 
     begin
@@ -15,6 +15,9 @@ class WelcomeController < ApplicationController
   end
 
   def create
+
+    $oauth_key = "d502eec9-2755-4c19-86b5-cebf38a5614a"
+    $oauth_secret = "secret"
 
     begin
       signature = OAuth::Signature.build(request, :consumer_secret => $oauth_secret)
