@@ -1,22 +1,23 @@
 class WelcomeController < ApplicationController
 
-  before_action :authorize!
   def index
+    before_action :authenticate_user!
 
   end
 
-  def create
-    require 'oauth/request_proxy/action_controller_request'
-    @provider = IMS::LTI::ToolProvider.new(
-        params[:oauth_consumer_key],
-        Rails.configuration.lti_settings[params[:oauth_consumer_key]],
-        params
-    )
+  def launch
 
-    if not @provider.valid_request?(request)
-      # the request wasn't validated
-      render :launch_error, status: 401
-      return
-    end
+    authenticator = IMS::LTI::Services::MessageAuthenticator.new(request.url, request.request_parameters, "FirstSecret")
+
+    #Check if the signature is valid
+    return false unless authenticator.valid_signature?
+
+    # check if `params['oauth_nonce']` has already been used
+
+    #check if the message is too old
+    return false if DateTime.strptime(request.request_parameters['oauth_timestamp'],'%s') < 5.minutes.ago
+
   end
+
+
 end
