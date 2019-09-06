@@ -17,6 +17,12 @@ class WelcomeController < ApplicationController
     #check if the message is too old
     return false if DateTime.strptime(request.request_parameters['oauth_timestamp'],'%s') < 5.minutes.ago
 
+    after_action :allow_iframe, only: [:show, :result]
+
+    def allow_iframe
+      response.headers.except! 'X-Frame-Options'
+    end
+    
   end
 
 
