@@ -11,6 +11,9 @@ module Turbolift
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
+    # Added  for lti tutorial test
+    config.lti_settings = Rails.application.config_for(:lti_settings)
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading

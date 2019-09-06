@@ -1,0 +1,4 @@
+production:
+  testkey: 'FirstSecret'
+development:
+  testkey: 'FirstSecret'

@@ -63,3 +63,5 @@ gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
 gem 'omniauth', '~> 1.3'
 gem 'omniauth-oauth2', '~> 1.4'
 gem 'omniauth-canvas', '~> 1.0.2'
+
+gem 'ims-lti', '~> 2.2.3'
