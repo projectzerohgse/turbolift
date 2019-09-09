@@ -1,4 +1,4 @@
-class WelcomeController < ApplicationController
+class SurveyController < ApplicationController
 
   after_action :allow_iframe, only: [:show, :result, :launch, :complete]
 
