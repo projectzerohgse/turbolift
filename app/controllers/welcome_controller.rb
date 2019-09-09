@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
 
-  after_action :allow_iframe, only: [:show, :result, :launch]
+  after_action :allow_iframe, only: [:show, :result, :launch, :complete]
 
   def allow_iframe
     response.headers.except! 'X-Frame-Options'
