@@ -36,11 +36,11 @@ class SurveyController < ApplicationController
     url = "/api/v1/courses/#{session[:course_id]}/assignments/#{session[:assignment_id]}/submissions/#{session[:user_id]}?submission[posted_grade]=complete"
     response = canvas.get(url)
 
-    if(response['grade'] == 'complete')
-      redirect_to 'http://google.com'
-    end
+    @grade = response['grade']
 
-    redirect_to 'https://harvard.az1.qualtrics.com/jfe/form/SV_7aBwwslOEsvjCTj'
+    if(response['grade'] != 'complete')
+      redirect_to 'https://harvard.az1.qualtrics.com/jfe/form/SV_7aBwwslOEsvjCTj'
+    end
 
   end
 
