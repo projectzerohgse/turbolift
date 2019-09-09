@@ -40,9 +40,12 @@ class WelcomeController < ApplicationController
   end
 
   def complete
+
     canvas = Canvas::API.new(:host => "https://harvard-catalog-courses.instructure.com", :token => "4860~FxRNPxhS0CfekJsWBaidgK8ASZACEpwMWHKhsWCdCrRbAoP1kBfxIE4FdylhZ7Zi")
     url = "/api/v1/courses/#{session[:course_id]}/assignments/#{session[:assignment_id]}/submissions/#{session[:user_id]}?submission[posted_grade]=complete"
     canvas.put(url)
+
+    @url = url
   end
 
 
