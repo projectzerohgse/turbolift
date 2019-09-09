@@ -37,6 +37,8 @@ class WelcomeController < ApplicationController
     session[:lis_person_name_full] = params.require :lis_person_name_full
     @lis_person_name_full = session[:lis_person_name_full]
 
+    redirect_to 'https://harvard.az1.qualtrics.com/jfe/form/SV_7aBwwslOEsvjCTj'
+
   end
 
   def complete
