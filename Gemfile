@@ -67,3 +67,5 @@ gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
 gem 'ims-lti', '~> 2.2.3'
 
 gem 'devise'
+
+gem 'canvas-api'

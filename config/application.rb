@@ -12,7 +12,7 @@ module Turbolift
     config.load_defaults 6.0
 
     # Added  for lti tutorial test
-    config.lti_settings = Rails.application.config_for(:lti_settings)
+    config.autoload_paths += %W(#{config.root}/lib)
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
