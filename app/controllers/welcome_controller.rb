@@ -25,6 +25,8 @@ class WelcomeController < ApplicationController
 
     # raise params.inspect
 
+    %w(custom_canvas_user_id custom_canvas_assignment_id custom_canvas_course_id).each { |v| session[v] = params[v] }
+
     session[:course_id] = params.require :custom_canvas_course_id
     session[:assignment_id] = params.require :custom_canvas_assignment_id
     session[:user_id] = params.require :custom_canvas_user_id
@@ -35,10 +37,12 @@ class WelcomeController < ApplicationController
     session[:lis_person_name_full] = params.require :lis_person_name_full
     @lis_person_name_full = session[:lis_person_name_full]
 
+  end
+
+  def complete
     canvas = Canvas::API.new(:host => "https://harvard-catalog-courses.instructure.com", :token => "4860~FxRNPxhS0CfekJsWBaidgK8ASZACEpwMWHKhsWCdCrRbAoP1kBfxIE4FdylhZ7Zi")
     url = "/api/v1/courses/#{session[:course_id]}/assignments/#{session[:assignment_id]}/submissions/#{session[:user_id]}?submission[posted_grade]=complete"
     canvas.put(url)
-
   end
 
 

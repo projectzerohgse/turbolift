@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get 'welcome/launch'
   post 'welcome/launch'
 
+  get 'welcome/complete'
+
   # root 'welcome#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
