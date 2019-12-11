@@ -8,7 +8,12 @@ class SurveyController < ApplicationController
 
   def index
     before_action :authenticate_user!
+  end
 
+  def generate_url(url, params = {})
+    uri = URI(url)
+    uri.query = params.to_query
+    uri.to_s
   end
 
   def launch
@@ -39,7 +44,7 @@ class SurveyController < ApplicationController
     @grade = response['grade']
 
     if(response['grade'] != 'complete')
-      redirect_to 'https://harvard.az1.qualtrics.com/jfe/form/SV_7aBwwslOEsvjCTj'
+       redirect_to generate_url("https://harvard.az1.qualtrics.com/jfe/form/SV_7aBwwslOEsvjCTj", :canvas_id => "#{session[:user_id]}")
     end
 
   end
