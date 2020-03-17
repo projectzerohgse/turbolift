@@ -44,13 +44,13 @@ class SurveyController < ApplicationController
     @grade = response['grade']
 
     if(response['grade'] != 'complete')
-       redirect_to generate_url("https://harvard.az1.qualtrics.com/jfe/form/SV_7aBwwslOEsvjCTj", :canvas_id => "#{session[:user_id]}")
+       redirect_to generate_url("https://harvard.az1.qualtrics.com/jfe/form/SV_a4ezn525A0CoS3P", :canvas_id => "#{session[:user_id]}")
     end
 
   end
 
   def complete
-    canvas = Canvas::API.new(:host => "https://harvard.az1.qualtrics.com/jfe/form/SV_7aBwwslOEsvjCTj", :token => "4860~FxRNPxhS0CfekJsWBaidgK8ASZACEpwMWHKhsWCdCrRbAoP1kBfxIE4FdylhZ7Zi")
+    canvas = Canvas::API.new(:host => "https://harvard.az1.qualtrics.com/jfe/form/SV_a4ezn525A0CoS3P", :token => "4860~FxRNPxhS0CfekJsWBaidgK8ASZACEpwMWHKhsWCdCrRbAoP1kBfxIE4FdylhZ7Zi")
     url = "/api/v1/courses/#{session[:course_id]}/assignments/#{session[:assignment_id]}/submissions/#{session[:user_id]}?submission[posted_grade]=complete"
     canvas.put(url)
 
