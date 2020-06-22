@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0b21934-ed80-4d1c-8437-8751634b38d6" name="Default Changelist" comment="" />
+    <list default="true" id="c0b21934-ed80-4d1c-8437-8751634b38d6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/turbolift.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/turbolift.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/survey_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/survey_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,12 +18,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="ProjectId" id="1QKnKtLkqPIGsbDdTrciUZ1QAYD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -30,7 +45,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Rails.Development: turbolift">
+  <component name="RunManager" selected="Rails.Production: turbolift">
     <configuration name="Development: turbolift" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="turbolift" />
       <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
@@ -109,7 +124,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" />
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="false" RAILS_SPRING_PRE_LOADER_OPTION="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -127,6 +142,31 @@
       <workItem from="1567537990654" duration="2459000" />
       <workItem from="1567606388607" duration="27072000" />
       <workItem from="1568037425574" duration="17594000" />
+      <workItem from="1571328031249" duration="984000" />
+      <workItem from="1572963555086" duration="65000" />
+      <workItem from="1572963740064" duration="601000" />
+      <workItem from="1574781188902" duration="2894000" />
+      <workItem from="1575393824469" duration="3143000" />
+      <workItem from="1575908087095" duration="1428000" />
+      <workItem from="1576069689318" duration="5229000" />
+      <workItem from="1576686158930" duration="7373000" />
+      <workItem from="1577484993322" duration="599000" />
+      <workItem from="1577806612129" duration="1803000" />
+      <workItem from="1578069945226" duration="6000" />
+      <workItem from="1580744993122" duration="3826000" />
+      <workItem from="1580837978525" duration="3422000" />
+      <workItem from="1583430979279" duration="3000" />
+      <workItem from="1584469424291" duration="1489000" />
+      <workItem from="1584470923285" duration="130000" />
+      <workItem from="1584471061663" duration="2659000" />
+      <workItem from="1586356537612" duration="2006000" />
+      <workItem from="1587495758398" duration="1760000" />
+      <workItem from="1588693518601" duration="5401000" />
+      <workItem from="1588941479450" duration="9150000" />
+      <workItem from="1589808090495" duration="757000" />
+      <workItem from="1590498329866" duration="1722000" />
+      <workItem from="1591631371589" duration="599000" />
+      <workItem from="1592849796369" duration="288000" />
     </task>
     <servers />
   </component>
@@ -145,19 +185,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/Gemfile</url>
-          <line>69</line>
-          <properties a="-1">
-            <option name="block-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
