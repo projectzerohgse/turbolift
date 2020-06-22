@@ -49,7 +49,7 @@ class SurveyController < ApplicationController
 
   end
 
-  def launch_pzo
+  def launchpzo
 
     authenticator = IMS::LTI::Services::MessageAuthenticator.new(request.url, request.request_parameters, "FirstSecret")
 

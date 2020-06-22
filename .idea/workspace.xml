@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0b21934-ed80-4d1c-8437-8751634b38d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/turbolift.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/turbolift.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/survey_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/survey_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
@@ -166,7 +163,7 @@
       <workItem from="1589808090495" duration="757000" />
       <workItem from="1590498329866" duration="1722000" />
       <workItem from="1591631371589" duration="599000" />
-      <workItem from="1592849796369" duration="288000" />
+      <workItem from="1592849796369" duration="968000" />
     </task>
     <servers />
   </component>

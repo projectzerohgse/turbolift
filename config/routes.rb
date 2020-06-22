@@ -8,8 +8,8 @@ Rails.application.routes.draw do
   get 'survey/launch'
   post 'survey/launch'
 
-  get 'survey/launch_pzo'
-  post 'survey/launch_pzo'
+  get 'survey/launchpzo'
+  post 'survey/launchpzo'
 
   get 'survey/complete'
 
